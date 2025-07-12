@@ -1,3 +1,13 @@
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home/Home";
+
 export default function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Home />
+      </main>
+    </>
+  );
 }
