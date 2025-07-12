@@ -1,11 +1,12 @@
 const pool = require('../config/database');
-const createGamesTable = require('./002_create_games_table');
+const createUsersTable = require('./001_create_users_table');
+// const createGamesTable = require('./002_create_games_table');
 
 const runMigrations = async () => {
     try {
         console.log('🔄 Running database migrations...');
         
-        await createGamesTable(pool);
+        await createUsersTable(pool);
         
         console.log('✅ All migrations completed successfully');
     } catch (error) {
