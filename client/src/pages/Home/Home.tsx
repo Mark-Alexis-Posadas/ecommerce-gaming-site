@@ -1,3 +1,9 @@
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <section>banner</section>
+      <section>featured</section>
+      <section>categories</section>
+    </>
+  );
 }
