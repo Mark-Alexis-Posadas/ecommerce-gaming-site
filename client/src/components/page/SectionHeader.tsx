@@ -1,5 +1,5 @@
-import React from "react";
+import type { ChildrenPropType } from "../../types/children";
 
-export default function SectionHeader() {
-  return <div>SectionHeader</div>;
+export default function SectionHeader({ children }: ChildrenPropType) {
+  return <div>{children}</div>;
 }
