@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import PageTitle from "../../components/page/PageTitle";
+import Section from "../../components/page/Section";
+import PageContainer from "../../components/page/PageContainer";
 
 const images = ["/banner/banner-one.avif", "/banner/banner-two.avif"];
 
@@ -20,8 +23,16 @@ export default function Home() {
         style={{ backgroundImage: `url(${images[index]})` }}
       ></section>
 
-      <section>featured</section>
-      <section>categories</section>
+      <Section>
+        <PageContainer>
+          <PageTitle>Featured Products</PageTitle>
+        </PageContainer>
+      </Section>
+      <Section>
+        <PageContainer>
+          <PageTitle>Categories</PageTitle>
+        </PageContainer>
+      </Section>
     </>
   );
 }
